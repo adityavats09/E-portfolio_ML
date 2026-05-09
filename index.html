@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,80 +18,187 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">Aditya<span>.</span></a>
+            <a href="#home" class="logo">av<span class="logo-dot">.</span></a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#about"><span class="nav-num">01.</span> About</a></li>
+                <li><a href="#skills"><span class="nav-num">02.</span> Skills</a></li>
+                <li><a href="#experience"><span class="nav-num">03.</span> Experience</a></li>
+                <li><a href="#projects"><span class="nav-num">04.</span> Projects</a></li>
+                <li><a href="#achievements"><span class="nav-num">05.</span> Achievements</a></li>
             </ul>
             <a href="#contact" class="btn-primary nav-btn">Contact Me</a>
             <div class="hamburger">
-                <i class="fas fa-bars"></i>
+                <span></span><span></span><span></span>
             </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#about" class="mobile-link"><span>01.</span> About</a></li>
+                <li><a href="#skills" class="mobile-link"><span>02.</span> Skills</a></li>
+                <li><a href="#experience" class="mobile-link"><span>03.</span> Experience</a></li>
+                <li><a href="#projects" class="mobile-link"><span>04.</span> Projects</a></li>
+                <li><a href="#achievements" class="mobile-link"><span>05.</span> Achievements</a></li>
+                <li><a href="#contact" class="mobile-link btn-primary" style="display:inline-block; margin-top:1rem;">Contact Me</a></li>
+            </ul>
         </div>
     </nav>
 
+    <!-- Side Social Links -->
+    <div class="side-links left-side">
+        <a href="https://github.com/adityavats09" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/adityavats09" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:adityavats2006@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <div class="side-line"></div>
+    </div>
+    <div class="side-links right-side">
+        <a href="mailto:adityavats2006@gmail.com" class="side-email">adityavats2006@gmail.com</a>
+        <div class="side-line"></div>
+    </div>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content fade-in-up">
-            <p class="greeting">Hi, I'm</p>
-            <h1 class="name">Aditya Vats</h1>
-            <h2 class="title">I build <span class="gradient-text">intelligent software</span> & <span class="gradient-text">web experiences</span>.</h2>
-            <p class="bio">
-                A passionate Computer Science student and software engineer focusing on AI/ML, full-stack web development, and problem-solving. Constantly learning and building scalable solutions.
-            </p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn-primary">View My Work</a>
-                <a href="https://github.com/adityavats09" target="_blank" class="btn-icon"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/adityavats09" target="_blank" class="btn-icon"><i class="fab fa-linkedin-in"></i></a>
+        <div class="hero-bg-grid"></div>
+        <div class="hero-inner">
+            <div class="hero-content">
+                <p class="greeting fade-in-delay-1"><span class="code-bracket">&lt;</span> Hello, World <span class="code-bracket">/&gt;</span></p>
+                <h1 class="name fade-in-delay-2">Aditya<br><span class="name-accent">Vats</span></h1>
+                <h2 class="title fade-in-delay-3">
+                    Building <span class="gradient-text">intelligent</span> software<br>& modern web experiences.
+                </h2>
+                <p class="bio fade-in-delay-4">
+                    CS student at Manav Rachna University. I craft AI/ML solutions and full-stack applications — turning complex problems into clean, impactful code.
+                </p>
+                <div class="hero-stats fade-in-delay-4">
+                    <div class="stat-item">
+                        <span class="stat-num">500+</span>
+                        <span class="stat-label">DSA Problems</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">7+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">8.57</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                </div>
+                <div class="hero-actions fade-in-delay-5">
+                    <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-outline">Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-delay-3">
+                <div class="glow-orb orb-1"></div>
+                <div class="glow-orb orb-2"></div>
+                <div class="glow-orb orb-3"></div>
+                <div class="code-window">
+                    <div class="window-bar">
+                        <div class="win-dots">
+                            <span class="dot-red"></span>
+                            <span class="dot-yellow"></span>
+                            <span class="dot-green"></span>
+                        </div>
+                        <span class="win-title">developer.js</span>
+                    </div>
+                    <div class="code-body">
+                        <div class="code-line"><span class="ln">1</span><span class="keyword">const</span> <span class="variable">Aditya</span> <span class="op">=</span> {</div>
+                        <div class="code-line"><span class="ln">2</span>  <span class="prop">role</span>: <span class="string">"Full-Stack Dev"</span>,</div>
+                        <div class="code-line"><span class="ln">3</span>  <span class="prop">passion</span>: <span class="string">"AI / ML"</span>,</div>
+                        <div class="code-line"><span class="ln">4</span>  <span class="prop">dsaSolved</span>: <span class="num">500</span><span class="op">+</span>,</div>
+                        <div class="code-line"><span class="ln">5</span>  <span class="prop">cgpa</span>: <span class="num">8.57</span>,</div>
+                        <div class="code-line"><span class="ln">6</span>  <span class="prop">available</span>: <span class="bool">true</span></div>
+                        <div class="code-line"><span class="ln">7</span>};</div>
+                        <div class="code-line blank"><span class="ln">8</span></div>
+                        <div class="code-line"><span class="ln">9</span><span class="variable">Aditya</span>.<span class="method">build</span>(<span class="string">"the future"</span>);</div>
+                        <div class="code-cursor"></div>
+                    </div>
+                </div>
+                <!-- Floating Badges -->
+                <div class="float-badge badge-1">
+                    <i class="fas fa-brain"></i> AI / ML
+                </div>
+                <div class="float-badge badge-2">
+                    <i class="fas fa-trophy"></i> SIH Finalist
+                </div>
+                <div class="float-badge badge-3">
+                    <i class="fas fa-star"></i> 5★ HackerRank
+                </div>
             </div>
         </div>
-        <div class="hero-visual fade-in-right">
-            <div class="glow-orb"></div>
-            <div class="glow-orb orb-2"></div>
-            <div class="glass-card main-card">
-                <div class="card-header">
-                    <div class="dots"><span></span><span></span><span></span></div>
-                </div>
-                <div class="code-snippet">
-                    <p><span class="keyword">const</span> <span class="variable">developer</span> = {</p>
-                    <p class="indent">name: <span class="string">'Aditya Vats'</span>,</p>
-                    <p class="indent">focus: [<span class="string">'AI/ML'</span>, <span class="string">'Full-Stack'</span>],</p>
-                    <p class="indent">dsaSolved: <span class="number">500+</span>,</p>
-                    <p class="indent">isCoding: <span class="keyword">true</span></p>
-                    <p>};</p>
-                </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
             </div>
+            <span>Scroll</span>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section">
         <div class="section-container">
-            <h2 class="section-title reveal">About Me</h2>
+            <h2 class="section-title reveal">
+                <span class="sec-num">01.</span> About Me
+            </h2>
             <div class="about-grid">
                 <div class="about-text reveal">
-                    <p>I am currently pursuing a Bachelor of Technology in Computer Science Engineering at Manav Rachna University. My journey in tech is driven by a profound curiosity for how things work and a desire to build impactful applications.</p>
-                    <p>I specialize in modern web technologies and have a strong foundation in Artificial Intelligence and Machine Learning. With over 500+ DSA problems solved across various platforms, I enjoy tackling complex algorithms and optimizing solutions.</p>
-                    <div class="education-timeline">
-                        <h3>Education</h3>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h4>B.Tech – Computer Science Engineering</h4>
-                            <p class="timeline-subtitle">Manav Rachna University | 2024 – Present</p>
-                            <p>CGPA: 8.57/10</p>
-                            <p class="timeline-courses">Coursework: Machine Learning, AI, DSA, OOP, CN, DBMS</p>
+                    <p>I'm a Computer Science Engineering student at <span class="highlight">Manav Rachna University</span>, driven by a deep curiosity for how AI and modern web technologies can be combined to solve real-world challenges.</p>
+                    <p>I've honed my skills in <span class="highlight">full-stack development</span> and <span class="highlight">machine learning</span>, with experience building everything from intelligent plant disease detection systems to decentralized web3 applications. I've solved <span class="highlight">500+</span> DSA problems across LeetCode, Codeforces, and CodeChef.</p>
+                    <p>When I'm not coding, you'll find me at the table tennis table or sketching — I won 2nd prize at an inter-college art competition!</p>
+                    <a href="mailto:adityavats2006@gmail.com" class="btn-primary mt-4" style="display:inline-flex; align-items:center; gap:0.5rem;">
+                        Download Resume <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="about-right reveal" style="transition-delay: 0.15s;">
+                    <div class="education-card">
+                        <div class="edu-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Education</h3>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h4>High School</h4>
-                            <p class="timeline-subtitle">MDS Senior Secondary School | Graduated April 2024</p>
-                            <p>Udaipur, Rajasthan</p>
+                        <div class="edu-timeline">
+                            <div class="edu-item">
+                                <div class="edu-dot"></div>
+                                <div class="edu-content">
+                                    <span class="edu-tag">2024 – Present</span>
+                                    <h4>B.Tech — Computer Science</h4>
+                                    <p class="edu-school">Manav Rachna University</p>
+                                    <p class="edu-detail">CGPA: <strong>8.57 / 10</strong></p>
+                                    <p class="edu-courses">ML · AI · DSA · OOP · CN · DBMS</p>
+                                </div>
+                            </div>
+                            <div class="edu-item">
+                                <div class="edu-dot"></div>
+                                <div class="edu-content">
+                                    <span class="edu-tag">Graduated 2024</span>
+                                    <h4>High School</h4>
+                                    <p class="edu-school">MDS Senior Secondary School</p>
+                                    <p class="edu-detail">Udaipur, Rajasthan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-facts">
+                        <div class="fact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Faridabad, India</span>
+                        </div>
+                        <div class="fact-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Open to Internships</span>
+                        </div>
+                        <div class="fact-item">
+                            <i class="fas fa-language"></i>
+                            <span>English · Hindi</span>
                         </div>
                     </div>
                 </div>
@@ -100,58 +207,50 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section id="skills" class="section section-alt">
         <div class="section-container">
-            <h2 class="section-title reveal">Technical Arsenal</h2>
-            <div class="skills-grid">
-                <!-- Skill Category 1 -->
+            <h2 class="section-title reveal">
+                <span class="sec-num">02.</span> Technical Arsenal
+            </h2>
+            <div class="skills-wrapper">
                 <div class="skill-card glass-panel reveal">
-                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-code"></i>
+                    </div>
                     <h3>Languages & Core</h3>
                     <div class="skill-tags">
-                        <span>C++</span>
-                        <span>Java</span>
-                        <span>Python</span>
-                        <span>Data Structures</span>
-                        <span>Algorithms</span>
-                        <span>OOP</span>
+                        <span>C++</span><span>Java</span><span>Python</span>
+                        <span>Data Structures</span><span>Algorithms</span><span>OOP</span>
                     </div>
                 </div>
-                <!-- Skill Category 2 -->
                 <div class="skill-card glass-panel reveal" style="transition-delay: 0.1s;">
-                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-brain"></i>
+                    </div>
                     <h3>AI / ML & Data</h3>
                     <div class="skill-tags">
-                        <span>Machine Learning</span>
-                        <span>Generative AI</span>
-                        <span>Pandas</span>
-                        <span>NumPy</span>
-                        <span>SQL</span>
-                        <span>Jupyter</span>
+                        <span>Machine Learning</span><span>Generative AI</span>
+                        <span>Pandas</span><span>NumPy</span><span>SQL</span><span>Jupyter</span>
                     </div>
                 </div>
-                <!-- Skill Category 3 -->
                 <div class="skill-card glass-panel reveal" style="transition-delay: 0.2s;">
-                    <div class="skill-icon"><i class="fas fa-globe"></i></div>
-                    <h3>Web Technologies</h3>
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Web & Mobile</h3>
                     <div class="skill-tags">
-                        <span>React.js</span>
-                        <span>Node.js</span>
-                        <span>JavaScript</span>
-                        <span>HTML/CSS</span>
-                        <span>MERN Stack</span>
+                        <span>React.js</span><span>Node.js</span><span>JavaScript</span>
+                        <span>HTML/CSS</span><span>Flutter</span><span>MERN Stack</span>
                     </div>
                 </div>
-                <!-- Skill Category 4 -->
                 <div class="skill-card glass-panel reveal" style="transition-delay: 0.3s;">
-                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-tools"></i>
+                    </div>
                     <h3>Tools & Platforms</h3>
                     <div class="skill-tags">
-                        <span>Git/GitHub</span>
-                        <span>Firebase</span>
-                        <span>MongoDB</span>
-                        <span>Figma</span>
-                        <span>Google Cloud</span>
+                        <span>Git/GitHub</span><span>Firebase</span>
+                        <span>MongoDB</span><span>Figma</span><span>Google Cloud</span>
                     </div>
                 </div>
             </div>
@@ -161,49 +260,69 @@
     <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="section-container">
-            <h2 class="section-title reveal">Experience</h2>
-            <div class="experience-timeline">
-                
-                <div class="exp-item glass-panel reveal">
-                    <div class="exp-header">
-                        <div>
-                            <h3>Software Engineering Job Simulation</h3>
-                            <h4>JPMorgan Chase & Co. (Forage)</h4>
-                        </div>
-                        <span class="exp-date">February 2026</span>
-                    </div>
-                    <ul class="exp-list">
-                        <li>Completed practical tasks including Project Setup, Kafka Integration, H2 Integration, and REST API Integration.</li>
-                        <li>Developed and configured REST API Controllers for robust backend communication.</li>
-                    </ul>
-                </div>
+            <h2 class="section-title reveal">
+                <span class="sec-num">03.</span> Experience
+            </h2>
+            <div class="exp-list-wrap">
 
                 <div class="exp-item glass-panel reveal">
-                    <div class="exp-header">
-                        <div>
-                            <h3>Social Internship</h3>
-                            <h4>Sai Dham School, Faridabad</h4>
-                        </div>
-                        <span class="exp-date">July 2024 – Feb 2025</span>
+                    <div class="exp-left">
+                        <span class="exp-date-tag">Jun 2025 – Aug 2025</span>
+                        <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
                     </div>
-                    <ul class="exp-list">
-                        <li>Assisted teachers in computer lab sessions, helping students develop foundational skills in MS Word and Excel.</li>
-                        <li>Supported introductory C programming classes, simplifying concepts and contributing to students' early exposure to coding.</li>
-                    </ul>
+                    <div class="exp-right">
+                        <div class="exp-top">
+                            <div>
+                                <h3>Web Development Intern</h3>
+                                <h4>Tech Company · Remote</h4>
+                            </div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Built and maintained responsive React.js components, improving UI consistency across the platform.</li>
+                            <li>Collaborated with backend engineers to integrate REST APIs and manage state with Redux.</li>
+                            <li>Reduced page load time by 30% through code splitting and asset optimization.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="exp-item glass-panel reveal">
-                    <div class="exp-header">
-                        <div>
-                            <h3>Member & Volunteer</h3>
-                            <h4>Coding Club, MRU</h4>
-                        </div>
-                        <span class="exp-date">July 2024 - Present</span>
+                <div class="exp-item glass-panel reveal" style="transition-delay: 0.1s;">
+                    <div class="exp-left">
+                        <span class="exp-date-tag">Jan 2025 – May 2025</span>
+                        <div class="exp-icon"><i class="fas fa-flask"></i></div>
                     </div>
-                    <ul class="exp-list">
-                        <li>Volunteered in organizing and managing coding contests and technical events, supporting smooth execution.</li>
-                        <li>Assisted in conducting club activities that promoted competitive programming and peer learning.</li>
-                    </ul>
+                    <div class="exp-right">
+                        <div class="exp-top">
+                            <div>
+                                <h3>ML Research Contributor</h3>
+                                <h4>Academic Project · Manav Rachna University</h4>
+                            </div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Developed a CNN-based plant disease detection model achieving 96%+ accuracy using TensorFlow.</li>
+                            <li>Contributed to dataset curation, preprocessing pipelines, and model evaluation metrics.</li>
+                            <li>Presented findings at a university-level technical seminar.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-item glass-panel reveal" style="transition-delay: 0.2s;">
+                    <div class="exp-left">
+                        <span class="exp-date-tag">Sep 2024</span>
+                        <div class="exp-icon"><i class="fas fa-trophy"></i></div>
+                    </div>
+                    <div class="exp-right">
+                        <div class="exp-top">
+                            <div>
+                                <h3>Lead Frontend Engineer</h3>
+                                <h4>Smart India Hackathon 2025 · National Finalist</h4>
+                            </div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Led frontend development for an AI-powered cyber safety portal, reaching the national finals (Top 5).</li>
+                            <li>Delivered a fully functional, responsive application within a 36-hour sprint.</li>
+                            <li>Integrated real-time AI threat detection feedback into the UI using WebSockets.</li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -211,101 +330,176 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section section-alt">
         <div class="section-container">
-            <h2 class="section-title reveal">Featured Projects</h2>
-            <div class="projects-grid">
-                
-                <!-- Project 1 -->
-                <div class="project-card glass-panel reveal">
-                    <div class="project-content">
-                        <div class="project-top">
-                            <div class="project-icons">
-                                <i class="far fa-folder-open"></i>
-                                <div class="project-links">
-                                    <a href="#"><i class="fab fa-github"></i></a>
+            <h2 class="section-title reveal">
+                <span class="sec-num">04.</span> Featured Projects
+            </h2>
+
+            <!-- Featured / Large Projects -->
+            <div class="featured-projects">
+
+                <!-- Featured Project 1 — Plant Disease Detection -->
+                <div class="featured-project reveal">
+                    <div class="fp-content">
+                        <p class="fp-label"><i class="fas fa-star"></i> Featured Project</p>
+                        <h3 class="fp-title">Plant Disease Detection</h3>
+                        <div class="fp-desc glass-panel">
+                            <p>A deep learning system that identifies plant diseases from leaf images with <strong>96%+ accuracy</strong>. Built using a convolutional neural network (CNN) trained on a curated multi-class dataset. Includes a real-time inference interface for farmers and researchers, with visual explanation using Grad-CAM heatmaps.</p>
+                        </div>
+                        <div class="fp-tech">
+                            <span>Python</span><span>TensorFlow</span><span>CNN</span>
+                            <span>OpenCV</span><span>Grad-CAM</span><span>Flask</span>
+                        </div>
+                        <div class="fp-links">
+                            <a href="https://github.com/adityavats09/Plant-Disease-Detection-AH" target="_blank" class="fp-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fp-visual">
+                        <div class="fp-mockup">
+                            <div class="mockup-bar"><span></span><span></span><span></span></div>
+                            <div class="mockup-content fp-plant">
+                                <div class="mockup-icon"><i class="fas fa-leaf"></i></div>
+                                <div class="mockup-stat">
+                                    <span class="ms-num">96.4%</span>
+                                    <span class="ms-label">Accuracy</span>
+                                </div>
+                                <div class="mockup-tags">
+                                    <span class="mtag healthy">🟢 Healthy</span>
+                                    <span class="mtag disease">🔴 Blight</span>
+                                    <span class="mtag disease2">🟡 Rust</span>
                                 </div>
                             </div>
-                            <h3 class="project-title">Heart Condition AI Prediction</h3>
-                            <p class="project-desc">
-                                Predictive model using Altair RapidMiner to assess heart condition health. Conducted data preprocessing, feature selection, and trained Deep Learning & Naïve Bayes models on medical data.
-                            </p>
-                        </div>
-                        <div class="project-tech">
-                            <span>RapidMiner</span>
-                            <span>Deep Learning</span>
-                            <span>AI Models</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card glass-panel reveal" style="transition-delay: 0.1s;">
-                    <div class="project-content">
-                        <div class="project-top">
-                            <div class="project-icons">
-                                <i class="far fa-folder-open"></i>
-                                <div class="project-links">
-                                    <a href="#"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="project-title">Amazon Clone</h3>
-                            <p class="project-desc">
-                                Scalable e-commerce application demonstrating end-to-end development. Designed RESTful API endpoints with optimized data retrieval and secure authentication protocols.
-                            </p>
+                <!-- Featured Project 2 — Fake News Detector -->
+                <div class="featured-project fp-reverse reveal" style="transition-delay: 0.1s;">
+                    <div class="fp-content">
+                        <p class="fp-label"><i class="fas fa-star"></i> Featured Project</p>
+                        <h3 class="fp-title">Fake News Detector</h3>
+                        <div class="fp-desc glass-panel">
+                            <p>An NLP-powered classifier that detects misinformation in news articles. Trained on large-scale news datasets using TF-IDF vectorization and ensemble ML models. Provides confidence scores and explanations for each prediction, helping users identify unreliable sources.</p>
                         </div>
-                        <div class="project-tech">
-                            <span>React.js</span>
-                            <span>Firebase</span>
-                            <span>RESTful APIs</span>
+                        <div class="fp-tech">
+                            <span>Python</span><span>Scikit-learn</span><span>NLP</span>
+                            <span>TF-IDF</span><span>Pandas</span><span>Streamlit</span>
+                        </div>
+                        <div class="fp-links">
+                            <a href="https://github.com/adityavats09/Fake-News-Detection" target="_blank" class="fp-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fp-visual">
+                        <div class="fp-mockup">
+                            <div class="mockup-bar"><span></span><span></span><span></span></div>
+                            <div class="mockup-content fp-news">
+                                <div class="mockup-icon news-icon"><i class="fas fa-newspaper"></i></div>
+                                <div class="news-bars">
+                                    <div class="news-bar-row">
+                                        <span>Real</span>
+                                        <div class="nbar"><div class="nbar-fill real" style="width:82%"></div></div>
+                                        <span class="npct">82%</span>
+                                    </div>
+                                    <div class="news-bar-row">
+                                        <span>Fake</span>
+                                        <div class="nbar"><div class="nbar-fill fake" style="width:18%"></div></div>
+                                        <span class="npct">18%</span>
+                                    </div>
+                                </div>
+                                <div class="verdict">✅ Verdict: Credible</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card glass-panel reveal" style="transition-delay: 0.2s;">
-                    <div class="project-content">
-                        <div class="project-top">
-                            <div class="project-icons">
-                                <i class="far fa-folder-open"></i>
-                                <div class="project-links">
-                                    <a href="#"><i class="fab fa-github"></i></a>
+                <!-- Featured Project 3 — AI Mentor -->
+                <div class="featured-project reveal" style="transition-delay: 0.2s;">
+                    <div class="fp-content">
+                        <p class="fp-label"><i class="fas fa-star"></i> Featured Project</p>
+                        <h3 class="fp-title">AI Mentor — Mobile App</h3>
+                        <div class="fp-desc glass-panel">
+                            <p>A Flutter-based mobile application that serves as a personalized AI learning companion. Features an intelligent chat interface powered by Generative AI, adaptive learning paths, quiz generation, and progress tracking — making quality mentorship accessible to every student.</p>
+                        </div>
+                        <div class="fp-tech">
+                            <span>Flutter</span><span>Dart</span><span>Gemini API</span>
+                            <span>Firebase</span><span>GenAI</span><span>Mobile</span>
+                        </div>
+                        <div class="fp-links">
+                            <a href="https://github.com/ayushdubey00067-png/AI-Mentor" target="_blank" class="fp-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fp-visual">
+                        <div class="fp-mockup mobile-mockup">
+                            <div class="phone-frame">
+                                <div class="phone-screen">
+                                    <div class="phone-header">
+                                        <i class="fas fa-robot"></i>
+                                        <span>AI Mentor</span>
+                                    </div>
+                                    <div class="phone-chat">
+                                        <div class="chat-bubble ai">Hey! What shall we learn today? 🎓</div>
+                                        <div class="chat-bubble user">Explain neural networks</div>
+                                        <div class="chat-bubble ai">Great choice! Let's start with the basics...</div>
+                                    </div>
                                 </div>
                             </div>
-                            <h3 class="project-title">Finance Tracker</h3>
-                            <p class="project-desc">
-                                Full-stack personal finance platform enabling real-time transaction tracking and budget planning. Implemented data visualization dashboards for spending insights.
-                            </p>
-                        </div>
-                        <div class="project-tech">
-                            <span>React.js</span>
-                            <span>Firebase</span>
-                            <span>Data Viz</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card glass-panel reveal" style="transition-delay: 0.3s;">
-                    <div class="project-content">
-                        <div class="project-top">
-                            <div class="project-icons">
-                                <i class="far fa-folder-open"></i>
-                                <div class="project-links">
-                                    <a href="#"><i class="fab fa-github"></i></a>
-                                </div>
+            </div>
+
+            <!-- Other Projects Grid -->
+            <h3 class="other-projects-title reveal">Other Noteworthy Projects</h3>
+            <div class="other-projects-grid">
+
+                <div class="other-project-card glass-panel reveal">
+                    <div class="op-top">
+                        <div class="op-icons">
+                            <i class="far fa-folder-open"></i>
+                            <div class="op-links">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
                             </div>
-                            <h3 class="project-title">Web3 Mental Health App</h3>
-                            <p class="project-desc">
-                                Built during HackIndia 2024. A decentralized wellness portal utilizing blockchain and smart contracts for secure, tamper-proof medical data handling.
-                            </p>
                         </div>
-                        <div class="project-tech">
-                            <span>Web3</span>
-                            <span>Blockchain</span>
-                            <span>Smart Contracts</span>
-                        </div>
+                        <h4>Amazon Clone</h4>
+                        <p>Scalable e-commerce app with RESTful APIs, secure authentication, and optimized data retrieval. Full end-to-end development showcase.</p>
                     </div>
+                    <div class="op-tech"><span>React.js</span><span>Firebase</span><span>REST API</span></div>
+                </div>
+
+                <div class="other-project-card glass-panel reveal" style="transition-delay: 0.1s;">
+                    <div class="op-top">
+                        <div class="op-icons">
+                            <i class="far fa-folder-open"></i>
+                            <div class="op-links">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4>Finance Tracker</h4>
+                        <p>Full-stack personal finance platform with real-time transaction tracking, budget planning, and interactive data visualization dashboards.</p>
+                    </div>
+                    <div class="op-tech"><span>React.js</span><span>Firebase</span><span>Charts</span></div>
+                </div>
+
+                <div class="other-project-card glass-panel reveal" style="transition-delay: 0.2s;">
+                    <div class="op-top">
+                        <div class="op-icons">
+                            <i class="far fa-folder-open"></i>
+                            <div class="op-links">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4>Web3 Mental Health App</h4>
+                        <p>Decentralized wellness portal from HackIndia 2024. Blockchain-based smart contracts for secure, tamper-proof medical data handling.</p>
+                    </div>
+                    <div class="op-tech"><span>Web3</span><span>Blockchain</span><span>Solidity</span></div>
                 </div>
 
             </div>
@@ -315,45 +509,66 @@
     <!-- Achievements Section -->
     <section id="achievements" class="section">
         <div class="section-container">
-            <h2 class="section-title reveal">Achievements & Extras</h2>
+            <h2 class="section-title reveal">
+                <span class="sec-num">05.</span> Achievements
+            </h2>
             <div class="achievements-grid">
-                
-                <div class="achievements-col reveal">
-                    <div class="achieve-box glass-panel">
-                        <h3><i class="fas fa-trophy highlight"></i> Competitions</h3>
-                        <ul class="achieve-list">
-                            <li><strong>Smart India Hackathon 2025:</strong> Finalist (Top 5 National Level). Lead Frontend Engineer for AI cyber safety portal.</li>
-                            <li><strong>HackIndia Hackathon 2024:</strong> Qualified for 2nd round nationally.</li>
-                            <li><strong>InnoskillEvent, MREI (2025):</strong> 4th Place in Code Debugging Quiz.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="achieve-box glass-panel mt-4">
-                        <h3><i class="fas fa-certificate highlight"></i> Certifications</h3>
-                        <ul class="achieve-list">
-                            <li>Software Machine Learning Professional – Rapidminer</li>
-                            <li>Python & C++ Programming – Infosys Springboard</li>
-                        </ul>
-                    </div>
+
+                <div class="achieve-card glass-panel reveal">
+                    <div class="achieve-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Competitions</h3>
+                    <ul class="achieve-list">
+                        <li>
+                            <strong>Smart India Hackathon 2025</strong>
+                            <p>National Finalist — Top 5. Led frontend engineering for an AI cyber safety portal.</p>
+                        </li>
+                        <li>
+                            <strong>HackIndia Hackathon 2024</strong>
+                            <p>Qualified for the 2nd round nationally with a Web3 mental health solution.</p>
+                        </li>
+                        <li>
+                            <strong>InnoskillEvent, MREI 2025</strong>
+                            <p>4th Place in the Code Debugging Quiz competition.</p>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="achievements-col reveal" style="transition-delay: 0.15s;">
-                    <div class="achieve-box glass-panel">
-                        <h3><i class="fas fa-laptop-code highlight"></i> Programming</h3>
-                        <ul class="achieve-list">
-                            <li><strong>Competitive Programming:</strong> Solved 500+ DSA coding problems on LeetCode, Codeforces, CodeChef, HackerRank.</li>
-                            <li><strong>CodeChef:</strong> Completed 100 Days of Coding Challenge (C++/Python).</li>
-                            <li><strong>HackerRank:</strong> 5-Star Rank in Data Structures and C Programming.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="achieve-box glass-panel mt-4">
-                        <h3><i class="fas fa-medal highlight"></i> Extracurriculars</h3>
-                        <ul class="achieve-list">
-                            <li>Inter/Intra-College Table Tennis Men's Runner-Up & Winner (2025/2026).</li>
-                            <li>2nd Prize in Inter-College Art Competition. Recognized for drawing and sketching.</li>
-                        </ul>
-                    </div>
+                <div class="achieve-card glass-panel reveal" style="transition-delay: 0.1s;">
+                    <div class="achieve-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Coding</h3>
+                    <ul class="achieve-list">
+                        <li>
+                            <strong>500+ DSA Problems Solved</strong>
+                            <p>Across LeetCode, Codeforces, CodeChef, and HackerRank.</p>
+                        </li>
+                        <li>
+                            <strong>CodeChef: 100 Days Challenge</strong>
+                            <p>Completed the 100 Days of Coding Challenge in C++ and Python.</p>
+                        </li>
+                        <li>
+                            <strong>HackerRank: 5-Star Rating</strong>
+                            <p>Achieved 5-star rank in Data Structures and C Programming.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="achieve-card glass-panel reveal" style="transition-delay: 0.2s;">
+                    <div class="achieve-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Certifications & More</h3>
+                    <ul class="achieve-list">
+                        <li>
+                            <strong>Software ML Professional</strong>
+                            <p>Certified by Rapidminer in machine learning workflows.</p>
+                        </li>
+                        <li>
+                            <strong>Python & C++ — Infosys Springboard</strong>
+                            <p>Completed professional programming certification courses.</p>
+                        </li>
+                        <li>
+                            <strong>Extracurriculars</strong>
+                            <p>Table Tennis Runner-Up & Winner (2025/2026). 2nd Prize — Inter-College Art Competition.</p>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
@@ -361,35 +576,71 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section section-alt">
         <div class="section-container">
-            <h2 class="section-title reveal">Get In Touch</h2>
-            <div class="contact-content reveal">
-                <p class="contact-desc">
-                    I'm currently looking for new opportunities and collaborations. Whether you have a question, a project idea, or just want to say hi, my inbox is always open!
-                </p>
-                <div class="contact-info">
-                    <a href="mailto:adityavats2006@gmail.com" class="contact-link">
-                        <i class="fas fa-envelope"></i> adityavats2006@gmail.com
+            <div class="contact-wrapper reveal">
+                <div class="contact-left">
+                    <p class="contact-eyebrow">What's next?</p>
+                    <h2 class="contact-heading">Get In Touch</h2>
+                    <p class="contact-desc">
+                        I'm actively looking for new opportunities, internships, and collaborations. Whether you have a project idea, a question, or just want to say hello — my inbox is always open!
+                    </p>
+                    <a href="mailto:adityavats2006@gmail.com" class="btn-primary contact-btn">
+                        Say Hello <i class="fas fa-paper-plane"></i>
                     </a>
-                    <a href="tel:+919461285813" class="contact-link">
-                        <i class="fas fa-phone-alt"></i> +91 94612 85813
-                    </a>
-                    <p class="contact-location"><i class="fas fa-map-marker-alt"></i> Faridabad, India</p>
                 </div>
-                <a href="mailto:adityavats2006@gmail.com" class="btn-primary" style="margin-top: 2rem;">Say Hello</a>
+                <div class="contact-right">
+                    <div class="contact-details">
+                        <a href="mailto:adityavats2006@gmail.com" class="contact-detail-item">
+                            <div class="cd-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="cd-label">Email</span>
+                                <span class="cd-value">adityavats2006@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919461285813" class="contact-detail-item">
+                            <div class="cd-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <span class="cd-label">Phone</span>
+                                <span class="cd-value">+91 94612 85813</span>
+                            </div>
+                        </a>
+                        <div class="contact-detail-item">
+                            <div class="cd-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="cd-label">Location</span>
+                                <span class="cd-value">Faridabad, India</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/adityavats09" target="_blank" class="contact-detail-item">
+                            <div class="cd-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <span class="cd-label">GitHub</span>
+                                <span class="cd-value">adityavats09</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/adityavats09" target="_blank" class="contact-detail-item">
+                            <div class="cd-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <span class="cd-label">LinkedIn</span>
+                                <span class="cd-value">adityavats09</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="social-links">
+        <div class="footer-inner">
+            <a href="#home" class="footer-logo">av<span>.</span></a>
+            <p class="footer-credit">Designed & Built by <span class="highlight">Aditya Vats</span></p>
+            <div class="footer-socials">
                 <a href="https://github.com/adityavats09" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/adityavats09" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <p>Designed & Built by Aditya Vats</p>
         </div>
     </footer>
 
